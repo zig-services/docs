@@ -53,10 +53,10 @@ class Game {
   boolean active;
   boolean visible;
 
-  // base ticket price for quantity=1, bet-factor=1
+  // base ticket price for quantity=1, bet factor=1
   MoneyAmount price;
 
-  // list of values allowed for bet-factor parameter.
+  // list of values allowed for bet factor parameter.
   int[] allowedBetFactors;
 
   // maximum value for the quantity paramter
@@ -107,7 +107,7 @@ backend on the path `/zig/games/$gameName/tickets:buy`. The game might pass a nu
   while not exposing your internal customer id.
 
   If the original request contained a `betFactor` or `quantity` url parameter, you need to pass
-  those values on as `bet-factor` and `quantity`. If the request is successful, the zig service
+  those values on as `betFactor` and `quantity`. If the request is successful, the zig service
   will respond with a ticket for the user.
 
   The purchase was successful and the customers balance can now be reduced by the tickets price.
